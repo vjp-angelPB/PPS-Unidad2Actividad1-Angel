@@ -9,7 +9,7 @@ Tenemos varios objetivos:
 
 > [Obtener información de una vulnerabilidad navegando por las webs de los organismos que mantienen esas listas.](#Trazado)
 
-> [Trazado de vulnerabilidad GoAnywhere MFT de Fortra](#Trazado\de\vulnerabilidad)
+> [Trazado de vulnerabilidad GoAnywhere MFT de Fortra](#Trazado-de-vulnerabilidad)
 
 
 ## Listas
