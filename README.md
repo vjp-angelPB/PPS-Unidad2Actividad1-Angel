@@ -9,7 +9,7 @@ Tenemos varios objetivos:
 
 > [Obtener información de una vulnerabilidad navegando por las webs de los organismos que mantienen esas listas.](#Trazado)
 
-> [Trazado de vulnerabilidad GoAnywhere MFT de Fortra](#Trazado-de-vulnerabilidad)
+> [Trazado de vulnerabilidad GoAnywhere MFT de Fortra](#Trazado-de-vulnerabilidad-GoAnywhere-MFT-de-Fortra)
 
 
 ## Listas
@@ -184,7 +184,7 @@ En algunas ocasiones nos podemos encontrar que en él figura información que no
 ---
 
 
-## Trazado de vulnerabilidad
+## Trazado de vulnerabilidad GoAnywhere MFT de Fortra
 
 A continuación, se detalla el trazado de la siguiente __[vulnerabilidad](https://www.incibe.es/empresas/avisos/vulnerabilidad-critica-de-omision-de-autenticacion-en-goanywhere-mft-de-fortra)__
 
