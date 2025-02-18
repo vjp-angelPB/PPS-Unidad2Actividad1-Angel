@@ -186,53 +186,55 @@ En algunas ocasiones nos podemos encontrar que en él figura información que no
 
 ## Trazado de vulnerabilidad GoAnywhere MFT de Fortra
 
-A continuación, se detalla el trazado de la siguiente __[vulnerabilidad](https://www.incibe.es/empresas/avisos/vulnerabilidad-critica-de-omision-de-autenticacion-en-goanywhere-mft-de-fortra)__
+A continuación, se detallan los pasos para el trazado de la siguiente __[vulnerabilidad](https://www.incibe.es/empresas/avisos/vulnerabilidad-critica-de-omision-de-autenticacion-en-goanywhere-mft-de-fortra)__
 
 ### Obtener información inicial sobre la vulnerabilidad
-Accedemos al enlace anterior y observamos la descripción general de la vulnerabilidad, (incluyendo CVE, impacto y recomendación).
+Tras acceder al enlace anterior, podemos observar que se trata de una vulnerabilidad crítica, más concretamente, se basa en la omisión de autenticación en GoAnywhere MFT de Fortra.
 
 ![](Images/img13.png)
 
+En la misma página detallan una posible solución en la que recomiendan actualizar a la versión 7.4.1 o superior, también muestran detalles de la vulnerabilidad. 
+
 ![](Images/img14.png)
+
+
+---
 
 
 ### Consulta en la base de datos CVE y NVD
 A continuación, nos dirigimos a CVE.org y buscamos el CVE en la barra de búsqueda, comprobamos la información de la vulnerabilidad.
 
+Tras acceder, nos muestran información sobre la vulnerabilidad, aparece con un __9.8__ de puntuación y una severidad __crítica__, debajo indíca la versión afectada.
+
 ![](Images/img15.png)
 
-Después, buscamos el mismo CVE en NVD y revisamos la información que obtenemos, de nuevo, realizamos una captura de la página NVD con el CVSS junto a los detalles de la vulnerabilidad
+También vamos a buscar en NVD, para ello accedemos a [NVD](https://nvd.nist.gov/general) y buscamos el CVE.
+Al acceder observamos la información que aparece sobre la vulnerabilidad, al comenzar observamos la sección de métricas CVSS, indíca que la puntuación es 9,8 y el vector, si posicionamos el puntero encima del vector detalla más información.
 
 ![](Images/img16.png)
+
+Más abajo en la misma página, aparece información sobre CWE, las listas comúnes más débiles.
 
 ![](Images/img17.png)
 
 
 ### Análisis del riesgo y explotación
 
-En la página de NVD, revisa la sección de métricas CVSS.
-Haz una captura de la evaluación CVSS (severidad, vector de ataque, impacto, etc.).
+En la página de [NVD](https://nvd.nist.gov/general), revisa la sección de métricas CVSS, más concretamente la evaluación CVSS (severidad, vector de ataque, impacto, etc.).
 
-- Captura 4: Métricas CVSS de la vulnerabilidad en NVD.
+Como observamos en la siguiente imagen, al posicionar el puntero encima del vector se despliega una ventana que nos muestra diversa información como la valoración de 9.8 Crítica,, también el impacto (5,9) y la puntuación de explotabilidad (3,9), todo esto se debe a que el vector de ataque es la red, la complejidad del ataque es baja, no requiere privilegios ni interacción de usuario, el alcance es sin cambios, es decir, no podemos llegar más allá del sistema al que accedamos, y la confidencialidad, integridad y disponibilidad es alta.
 
 ![](Images/img16.png)
 
-Como observamos en la imagen anterior tiene una valoración de 9.8 Crítica, esto es debido a que el Vector de ataque es la red, la complejidad del ataque es baja, no requiere privilegios ni interacción de usuario, el alcance es sin cambios, es decir, no podemos llegar más allá del sistema al que accedamos, y la confidencialidad, integridad y disponibilidad es alta.
-
-Además, en la misma página, aparecen las debilidades CWE asocialas a la vulnerabilidad, vamos a buscar información para cada CWE listada en CWE.mitre.org
-En la misma página, busca las debilidades CWE asociadas a la vulnerabilidad y toma una captura.
-
-Observamos que aparece una CWE asociada a la vulnerabilidad:
+Más abajo en la misma página, aparecen las debilidades CWE asocialas a la vulnerabilidad, si pinchamos en ella nos redirige a otra página y muestra información sobre dicha CWE.
 
 ![](Images/img17.png)
 
-Al entrar al CWE asociado, nos muestra información como su descripción, las consecuencias comunes, las posibles mitigaciones y demás...
+Al pincha sobre el CWE mencionado, muestra información como la descripción del CWE, las consecuencias comunes, las posibles mitigaciones y demás...
 
 ![](Images/img18.png)
 
-También nos muestra información relacionada sobre la CWE, pueden ser "hijos de ella", es decir, han surgido de esa vulnerabilidad, aunque también nos muestra otras CWE relacionadas con la buscada.
-
-Relevante para la visión "Desarrollo de software" (CWE-699)
+Más abajo en la misma página, nos muestra una tabla con las relaciones del CWE, las relaciones clasificadas en la tabla según su naturaleza pueden ser "hijos de ella", "precedidos de ella", "miembros de", etc..., es decir, o han surgido de ella, o preceden de ella, o ella misma es miembro del ID del CWE.
 
 ![](Images/img19.png)
 
@@ -244,32 +246,236 @@ Encontramos también las posibles mitigaciones que ofrece el [Mitre](https://cwe
 
 ![](Images/img21.png)
 
-Podemos encontrar también patrones de ataques relacionados 
+Por último, más abajo en la misma página, podemos encontrar información sobre patrones de ataques relacionados.
 
 ![](Images/img20.png)
 
 
 ### Patrones de ataque relacionados
 
-Observamos si en la información de CWE se menciona un patrón de ataque CAPEC, en ese caso, podemos buscarlo en __CAPEC.mitre.org__.
+Observamos que en la información de CWE se mencionan un patrones de ataque CAPEC, en ese caso, podemos buscarlo en __CAPEC.mitre.org__.
 
-- Captura 7: Información de CAPEC sobre el patrón de ataque relacionado(de la descripción del patrón de ataque y su mitigación).
+He buscado la primera opción, al acceder nos muestra una descripción, la severidad típica, las relaciones, etc...
 
+![](Images/img24.png)
+
+Muestra la manera de ejecutarlo:
+
+![](Images/img25.png)
+
+También muestra los prerequisitos, las habilidades necesarias, las mitigaciones, y las debilidades relacionadas, entre otros.
+
+![](Images/img26.png)
 
 
 ### Registro CVE y soluciones
 Por último volvemos a la página CVE.org y buscamos la opción "View JSON" para descargar el registro CVE.
 Toma una captura de la estructura JSON de la vulnerabilidad.
 
-- Captura 8: Información JSON de la vulnerabilidad en CVE.org.
+![](Images/img22.png)
 
-Si en NVD o INCIBE se mencionan parches o soluciones, accedemos a la página del fabricante y observamos las versiones corregidas o del enlace de carga.
+![](Images/img23.png)
 
-- Captura 9: Página del fabricante con los parches disponibles.
-
-
-
-
+```
+{
+  "dataType": "CVE_RECORD",
+  "dataVersion": "5.1",
+  "cveMetadata": {
+    "cveId": "CVE-2024-0204",
+    "assignerOrgId": "df4dee71-de3a-4139-9588-11b62fe6c0ff",
+    "state": "PUBLISHED",
+    "assignerShortName": "Fortra",
+    "dateReserved": "2024-01-03T00:12:28.436Z",
+    "datePublished": "2024-01-22T18:05:13.194Z",
+    "dateUpdated": "2025-02-13T17:27:06.436Z"
+  },
+  "containers": {
+    "cna": {
+      "affected": [
+        {
+          "defaultStatus": "affected",
+          "product": "GoAnywhere MFT",
+          "vendor": "Fortra",
+          "versions": [
+            {
+              "lessThan": "7.4.1",
+              "status": "affected",
+              "version": "6.0.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "credits": [
+        {
+          "lang": "en",
+          "type": "finder",
+          "user": "00000000-0000-4000-9000-000000000000",
+          "value": "Mohammed Eldeeb & Islam Elrfai, Spark Engineering Consultants"
+        }
+      ],
+      "descriptions": [
+        {
+          "lang": "en",
+          "supportingMedia": [
+            {
+              "base64": false,
+              "type": "text/html",
+              "value": "Authentication bypass in Fortra's GoAnywhere MFT prior to 7.4.1 allows an unauthorized user to create an admin user via the administration portal."
+            }
+          ],
+          "value": "Authentication bypass in Fortra's GoAnywhere MFT prior to 7.4.1 allows an unauthorized user to create an admin user via the administration portal."
+        }
+      ],
+      "impacts": [
+        {
+          "capecId": "CAPEC-1",
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "CAPEC-1 Accessing Functionality Not Properly Constrained by ACLs"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "cvssV3_1": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 9.8,
+            "baseSeverity": "CRITICAL",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "format": "CVSS",
+          "scenarios": [
+            {
+              "lang": "en",
+              "value": "GENERAL"
+            }
+          ]
+        }
+      ],
+      "problemTypes": [
+        {
+          "descriptions": [
+            {
+              "cweId": "CWE-425",
+              "description": "CWE-425 Direct Request ('Forced Browsing')",
+              "lang": "en",
+              "type": "CWE"
+            }
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "orgId": "df4dee71-de3a-4139-9588-11b62fe6c0ff",
+        "shortName": "Fortra",
+        "dateUpdated": "2024-02-02T17:06:23.244Z"
+      },
+      "references": [
+        {
+          "tags": [
+            "vendor-advisory"
+          ],
+          "url": "https://www.fortra.com/security/advisory/fi-2024-001"
+        },
+        {
+          "tags": [
+            "permissions-required"
+          ],
+          "url": "https://my.goanywhere.com/webclient/ViewSecurityAdvisories.xhtml"
+        },
+        {
+          "url": "http://packetstormsecurity.com/files/176683/GoAnywhere-MFT-Authentication-Bypass.html"
+        },
+        {
+          "url": "http://packetstormsecurity.com/files/176974/Fortra-GoAnywhere-MFT-Unauthenticated-Remote-Code-Execution.html"
+        }
+      ],
+      "solutions": [
+        {
+          "lang": "en",
+          "supportingMedia": [
+            {
+              "base64": false,
+              "type": "text/html",
+              "value": "Upgrade to version 7.4.1 or higher. The vulnerability may also be eliminated in non-container deployments by deleting the&nbsp;InitialAccountSetup.xhtml file in the install directory and restarting the services. For container-deployed instances, replace the file with an empty file and restart. For additional information, see&nbsp;\u003Ca target=\"_blank\" rel=\"nofollow\" href=\"https://my.goanywhere.com/webclient/ViewSecurityAdvisories.xhtml\"\u003Ehttps://my.goanywhere.com/webclient/ViewSecurityAdvisories.xhtml\u003C/a\u003E&nbsp;(registration required).\u003Ca target=\"_blank\" rel=\"nofollow\" href=\"https://my.goanywhere.com/webclient/ViewSecurityAdvisories.xhtml\"\u003E\u003C/a\u003E"
+            }
+          ],
+          "value": "Upgrade to version 7.4.1 or higher. The vulnerability may also be eliminated in non-container deployments by deleting the InitialAccountSetup.xhtml file in the install directory and restarting the services. For container-deployed instances, replace the file with an empty file and restart. For additional information, see  https://my.goanywhere.com/webclient/ViewSecurityAdvisories.xhtml https://my.goanywhere.com/webclient/ViewSecurityAdvisories.xhtml  (registration required).  https://my.goanywhere.com/webclient/ViewSecurityAdvisories.xhtml"
+        }
+      ],
+      "source": {
+        "advisory": "XXX-YYY",
+        "discovery": "UNKNOWN"
+      },
+      "title": "Authentication Bypass in GoAnywhere MFT",
+      "workarounds": [
+        {
+          "lang": "en",
+          "supportingMedia": [
+            {
+              "base64": false,
+              "type": "text/html",
+              "value": "Users are encouraged to apply defense-in-depth tactics to limit access to the administrative console. Do not expose the console to the internet and apply web application controls such as a WAF, monitoring, and access controls.&nbsp;"
+            }
+          ],
+          "value": "Users are encouraged to apply defense-in-depth tactics to limit access to the administrative console. Do not expose the console to the internet and apply web application controls such as a WAF, monitoring, and access controls."
+        }
+      ],
+      "x_generator": {
+        "engine": "Vulnogram 0.1.0-dev"
+      }
+    },
+    "adp": [
+      {
+        "providerMetadata": {
+          "orgId": "af854a3a-2127-422b-91ae-364da2661108",
+          "shortName": "CVE",
+          "dateUpdated": "2024-08-01T17:41:15.984Z"
+        },
+        "title": "CVE Program Container",
+        "references": [
+          {
+            "tags": [
+              "vendor-advisory",
+              "x_transferred"
+            ],
+            "url": "https://www.fortra.com/security/advisory/fi-2024-001"
+          },
+          {
+            "tags": [
+              "permissions-required",
+              "x_transferred"
+            ],
+            "url": "https://my.goanywhere.com/webclient/ViewSecurityAdvisories.xhtml"
+          },
+          {
+            "url": "http://packetstormsecurity.com/files/176683/GoAnywhere-MFT-Authentication-Bypass.html",
+            "tags": [
+              "x_transferred"
+            ]
+          },
+          {
+            "url": "http://packetstormsecurity.com/files/176974/Fortra-GoAnywhere-MFT-Unauthenticated-Remote-Code-Execution.html",
+            "tags": [
+              "x_transferred"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+```
 
 
 
