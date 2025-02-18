@@ -1,7 +1,7 @@
 # PPS-Unidad2Actividad1-Angel
 
 # Trazado de una vulnerabilidad.
-Actividad 1 de la Unidad 1 de Puesta en Producción Segura. Tabajaremos con los Entornos de Desarrollo
+Actividad 1 de la Unidad 2 de Puesta en Producción Segura. Tabajaremos con los Entornos de Desarrollo
 
 Tenemos varios objetivos:
 
@@ -44,7 +44,9 @@ El CVSS es un sistema de puntuación que evalúa la severidad de una vulnerabili
 #### 7. [MITRE ATT&CK Framework](https://attack.mitre.org/)
 MITRE ATT&CK es un marco de conocimiento que documenta tácticas, técnicas y procedimientos (TTPs) utilizados por actores de amenazas en ataques cibernéticos. Es ampliamente utilizado en análisis de amenazas y defensa proactiva.
 
+
 ---
+
 
 ## Trazado
 Vamos a seguir el trazado de una vulnerabilidad a partir de [este artículo del INCIBE](https://www.incibe.es/empresas/avisos/autodesk-ha-publicado-multiples-vulnerabilidades-que-afectan-autocad).
@@ -232,12 +234,12 @@ Observamos si en la información de CWE se menciona un patrón de ataque CAPEC, 
 
 
 ### Registro CVE y soluciones
-Vuelve a la página de CVE.org y busca la opción "View JSON" para descargar el registro CVE.
+Por último volvemos a la página CVE.org y buscamos la opción "View JSON" para descargar el registro CVE.
 Toma una captura de la estructura JSON de la vulnerabilidad.
 
 - Captura 8: Información JSON de la vulnerabilidad en CVE.org.
 
-Si en NVD o INCIBE se mencionan parches o soluciones, accede a la página del fabricante y toma una captura de las versiones corregidas o del enlace de descarga.
+Si en NVD o INCIBE se mencionan parches o soluciones, accedemos a la página del fabricante y observamos las versiones corregidas o del enlace de carga.
 
 - Captura 9: Página del fabricante con los parches disponibles.
 
