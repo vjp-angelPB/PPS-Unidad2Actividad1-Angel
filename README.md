@@ -219,16 +219,27 @@ Haz una captura de la evaluación CVSS (severidad, vector de ataque, impacto, et
 
 Como observamos en la imagen anterior tiene una valoración de 9.8 Crítica, esto es debido a que el Vector de ataque es la red, la complejidad del ataque es baja, no requiere privilegios ni interacción de usuario, el alcance es sin cambios, es decir, no podemos llegar más allá del AutoCad al que entremos, y la confidencialidad, integridad y disponibilidad es alta.
 
-
+Además, en la misma página, aparecen las debilidades CWE asocialas a la vulnerabilidad, vamos a buscar información para cada CWE listada en CWE.mitre.org
 En la misma página, busca las debilidades CWE asociadas a la vulnerabilidad y toma una captura.
 
-- Captura 5: Información sobre las debilidades CWE asociadas en NVD.
+![](Images/img17.png)
+
+![](Images/img18.png)
+
+![](Images/img19.png)
+
+Encontramos también las posibles mitigaciones que ofrece Mitre:
+
+- Aplique autorizaciones de control de acceso adecuadas para cada acceso a todas las URL, scripts o archivos restringidos.
+
+- Considere utilizar marcos basados ​​en MVC como Struts.
+
+![](Images/img21.png)
 
 
+Podemos encontrar también patrones de ataques relacionados 
 
-Para cada CWE listada, busca más información en CWE.mitre.org y toma capturas de su descripción y posibles mitigaciones.
-
-- Captura 6: Información de CWE en cwe.mitre.org.
+![](Images/img20.png)
 
 
 
