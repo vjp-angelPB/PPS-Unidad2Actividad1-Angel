@@ -79,7 +79,7 @@ Para ver información sobre dicha vulnerabilidad podemos acudir al menos a dos f
 
 ## Información sobre el riesgo o criticidad de una vulnerabilidad
 
-Desde la [entrada correspondiente a la vulnerabilidad en la NVD](https://nvd.nist.gov/vuln/detail/CVE-2023-29073), lo primero que nos encontramos, es la información de la criticidad que la vulnerabilidad presenta, así como el vector asociado a dicho nivel en la CVSS. En este caso vemos que tiene una valoración de 9.8.
+Desde la [entrada correspondiente a la vulnerabilidad en la NVD](https://nvd.nist.gov/vuln/detail/CVE-2023-29073), lo primero que nos encontramos, es la información de la criticidad que la vulnerabilidad presenta, así como el vector asociado a dicho nivel en la CVSS. En este caso vemos que tiene una valoración de 9.8 y está marcada como crítica.
  
 ![image](https://github.com/user-attachments/assets/34927a1e-80b2-4655-9118-de7c7fd4bc09)
 
@@ -107,16 +107,14 @@ En esta ocasión podemos ver como son dos las debilidades explotadas por esta vu
 >
 > Dentro de la información mostrada en dicha página, podemos tener diferentes vistas, tal y como podemos ver en la imagen siguiente. Si le damos a __Complete__ tendremos toda la información visible.
 >
-> ![](images/cve1.org)
->
 > De la información mostrada, podemos extraer, que la debilidad explotada, consiste en la escritura en posiciones fuera de los límites de la memoria, y esto podría ser utilizado para modificar los datos de control, direcciones de retorno e incluso ejecutar código.
 >
 > Como mitigaciones que nos ofrecen es usar lenguajes donde no se produzca el desbordamiento del buffer o sea más fáciles de evitar. 
 >
 > También podemos ver las posibles mitigaciones que podemos efectuar en las fases de arquitectura y diseño, como utilizar diferentes librerías y métodos.
 >
-> Más información a obtener... por ejemplo podemos observar como son debilidades presentes en lenguajes como C y C++, por lo que seguramente la aplicación está escrita en alguno de ellos. ![image](https://github.com/user-attachments/assets/9d84cf28-574c-4612-ada3-11eda6894533)
-
+> Más información a obtener... por ejemplo podemos observar como son debilidades presentes en lenguajes como C y C++, por lo que seguramente la aplicación está escrita en alguno de ellos.
+> ![image](https://github.com/user-attachments/assets/9d84cf28-574c-4612-ada3-11eda6894533)
 >
 > También, por último, podemos ver las relaciones entre ésta y otras debilidades, ya que como podemos ver en la imagen ![image](https://github.com/user-attachments/assets/62fb41be-15ef-4e7b-91ff-085c6ac8b2ec), esta debilidad ha surgido a partir de la CWE-119 y es padre de la CWE-121 y CWE-122 que es la otra debilidad presente en la vulnerabilidad que estamos estudiando.
 
