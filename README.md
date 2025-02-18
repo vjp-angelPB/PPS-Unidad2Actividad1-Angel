@@ -191,8 +191,6 @@ A continuación, se detalla el trazado de la siguiente __[vulnerabilidad](https:
 ### Obtener información inicial sobre la vulnerabilidad
 Accedemos al enlace anterior y observamos la descripción general de la vulnerabilidad, (incluyendo CVE, impacto y recomendación).
 
-- Captura de la descripción general de la vulnerabilidad en la página de INCIBE (incluyendo CVE, impacto y recomendación).
-
 ![](Images/img13.png)
 
 ![](Images/img14.png)
@@ -201,13 +199,13 @@ Accedemos al enlace anterior y observamos la descripción general de la vulnerab
 ### Consulta en la base de datos CVE y NVD
 A continuación, nos dirigimos a CVE.org y buscamos el CVE en la barra de búsqueda, comprobamos la información de la vulnerabilidad.
 
-- Captura 2: Página de CVE con la información de la vulnerabilidad.
-
 ![](Images/img15.png)
 
 Después, buscamos el mismo CVE en NVD y revisamos la información que obtenemos, de nuevo, realizamos una captura de la página NVD con el CVSS junto a los detalles de la vulnerabilidad
 
-- Captura 3: Página de NVD mostrando la puntuación CVSS y los detalles del riesgo.
+![](Images/img16.png)
+
+![](Images/img17.png)
 
 
 ### Análisis del riesgo y explotación
@@ -217,9 +215,13 @@ Haz una captura de la evaluación CVSS (severidad, vector de ataque, impacto, et
 
 - Captura 4: Métricas CVSS de la vulnerabilidad en NVD.
 
+
+
 En la misma página, busca las debilidades CWE asociadas a la vulnerabilidad y toma una captura.
 
 - Captura 5: Información sobre las debilidades CWE asociadas en NVD.
+
+
 
 Para cada CWE listada, busca más información en CWE.mitre.org y toma capturas de su descripción y posibles mitigaciones.
 
