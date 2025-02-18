@@ -193,14 +193,17 @@ Accedemos al enlace anterior y observamos la descripción general de la vulnerab
 
 - Captura de la descripción general de la vulnerabilidad en la página de INCIBE (incluyendo CVE, impacto y recomendación).
 
+![](Images/img13.png)
 
-Buscamos el identificador CVE asociado a la vulnerabilidad en el aviso de INCIBE.
+![](Images/img14.png)
 
 
 ### Consulta en la base de datos CVE y NVD
-A continuación, nos dirigimos a CVE.org e introducimos el CVE en la barra de búsqueda, hacemos captura de la información de la vulnerabilidad.
+A continuación, nos dirigimos a CVE.org y buscamos el CVE en la barra de búsqueda, comprobamos la información de la vulnerabilidad.
 
 - Captura 2: Página de CVE con la información de la vulnerabilidad.
+
+![](Images/img15.png)
 
 Después, buscamos el mismo CVE en NVD y revisamos la información que obtenemos, de nuevo, realizamos una captura de la página NVD con el CVSS junto a los detalles de la vulnerabilidad
 
