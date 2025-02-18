@@ -9,6 +9,8 @@ Tenemos varios objetivos:
 
 > [Obtener información de una vulnerabilidad navegando por las webs de los organismos que mantienen esas listas.](#Trazado)
 
+> [Trazado de vulnerabilidad GoAnywhere MFT de Fortra](#Trazadodevulnerabilidad)
+
 
 ## Listas
 
@@ -114,9 +116,14 @@ En esta ocasión podemos ver como son dos las debilidades explotadas por esta vu
 > También podemos ver las posibles mitigaciones que podemos efectuar en las fases de arquitectura y diseño, como utilizar diferentes librerías y métodos.
 >
 > Más información a obtener... por ejemplo podemos observar como son debilidades presentes en lenguajes como C y C++, por lo que seguramente la aplicación está escrita en alguno de ellos.
+>
 > ![image](https://github.com/user-attachments/assets/9d84cf28-574c-4612-ada3-11eda6894533)
 >
-> También, por último, podemos ver las relaciones entre ésta y otras debilidades, ya que como podemos ver en la imagen ![image](https://github.com/user-attachments/assets/62fb41be-15ef-4e7b-91ff-085c6ac8b2ec), esta debilidad ha surgido a partir de la CWE-119 y es padre de la CWE-121 y CWE-122 que es la otra debilidad presente en la vulnerabilidad que estamos estudiando.
+> También, por último, podemos ver las relaciones entre ésta y otras debilidades, ya que como podemos ver en la imagen
+>
+> ![image](https://github.com/user-attachments/assets/62fb41be-15ef-4e7b-91ff-085c6ac8b2ec)
+>
+> Esta debilidad ha surgido a partir de la CWE-119 y es padre de la CWE-121 y CWE-122 que es la otra debilidad presente en la vulnerabilidad que estamos estudiando.
 
 
 - CWE-122
@@ -124,7 +131,9 @@ En esta ocasión podemos ver como son dos las debilidades explotadas por esta vu
 >
 > Si leemos, podemos ver cómo nos encontramos ante la debilidad de desbordamiento de pila y que se considera una variación de la anterior debilidad, por lo que es hijo de ella.
 >
-> También vemos que es una debilidad presente en los lenguajes C y C++ y aquí en está página podemos encontrar la relación de esta debilidad con otro listado el de patrones de ataque. Tal y como vemos en la imagen, para acometer esta debilidad usamos el patrón de ataque catalogado como CAPEC-92. ![image](https://github.com/user-attachments/assets/576a92cd-6971-4458-b15a-3d6a14540e0a)
+> También vemos que es una debilidad presente en los lenguajes C y C++ y aquí en está página podemos encontrar la relación de esta debilidad con otro listado el de patrones de ataque. Tal y como vemos en la imagen, para acometer esta debilidad usamos el patrón de ataque catalogado como CAPEC-92.
+>
+> ![image](https://github.com/user-attachments/assets/576a92cd-6971-4458-b15a-3d6a14540e0a)
 
 
 ---
@@ -136,10 +145,14 @@ Podemos acceder a información sobre los patrones de ataque en la lista mantenid
 
 En el caso que nos atañe, hemos llegado a que la vulnerabilidad que estudiamos se puede explotar mediante el [patrón de ataque CAPEC-92. Aquí tenemos enlace a él.](https://capec.mitre.org/data/definitions/92.html)
 
+![image](https://github.com/user-attachments/assets/359cfd6f-9ddb-4d7d-967c-b5c5b2917256)
+
 Como nos pasaba en la página cwe.mitre.org, aquí también podemos seleccionar la información a mostrar, dependiendo de nuestras necesidades. En caso de que queramos ver toda la información, selecionamos la vista Complete.
 
 > Por la información suministrada, vemos que el ataque se denomina desbordamiento de enteros y consiste en obligar a una variable, dicho valor suele ser una posición de memoria, y utilizando valores fuera del rango de los valores enteros, se le asigna un valor no admitido para forzar un comportamiento inesperado.
+> 
 > ![image](https://github.com/user-attachments/assets/75c5a08e-cfa7-43b0-9f85-bd104d3d4ecd)
+> 
 > Podemos ver cómo se realiza el flujo de ejecución, los requisitos previos, etc. así como las habilidades requeridas para la realización de este patrón de ataque.
 >
 > Por otra parte también vemos las consecuencias respecto a la integridad, confidencialidad, etc., así como las posibles mitigaciones que podemos realizar.
@@ -168,11 +181,16 @@ En algunas ocasiones nos podemos encontrar que en él figura información que no
 > ![image](https://github.com/user-attachments/assets/d254b80e-56bc-4dbc-a0e2-ef9625ffbe76)
 
 
-
 ---
 
 
-## ENTREGA
->__Crea un repositorio  con nombre PPS-Unidad1Actividad1-Tu nombre que contenga las respuestas a las preguntas y las evidencias de que has realizado las operaciones indicadas.__
+## Trazado de __[vulnerabilidad](https://www.incibe.es/empresas/avisos/vulnerabilidad-critica-de-omision-de-autenticacion-en-goanywhere-mft-de-fortra)__
 
->__Sube a la plataforma, tanto el repositorio comprimido como la dirección a tu repositorio de Github.__
+
+
+
+
+
+
+Puesta en Producción Segura - Unidad 2
+> Ángel Pérez Blanco
