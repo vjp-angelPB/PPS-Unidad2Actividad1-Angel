@@ -222,20 +222,27 @@ Como observamos en la imagen anterior tiene una valoración de 9.8 Crítica, est
 Además, en la misma página, aparecen las debilidades CWE asocialas a la vulnerabilidad, vamos a buscar información para cada CWE listada en CWE.mitre.org
 En la misma página, busca las debilidades CWE asociadas a la vulnerabilidad y toma una captura.
 
+Observamos que aparece una CWE asociada a la vulnerabilidad:
+
 ![](Images/img17.png)
+
+Al entrar al CWE asociado, nos muestra información como su descripción, las consecuencias comunes, las posibles mitigaciones y demás...
 
 ![](Images/img18.png)
 
+También nos muestra información relacionada sobre la CWE, pueden ser "hijos de ella", es decir, han surgido de esa vulnerabilidad, aunque también nos muestra otras CWE relacionadas con la buscada.
+
+Relevante para la visión "Desarrollo de software" (CWE-699)
+
 ![](Images/img19.png)
 
-Encontramos también las posibles mitigaciones que ofrece Mitre:
+Encontramos también las posibles mitigaciones que ofrece el [Mitre](https://cwe.mitre.org/index.html):
 
 - Aplique autorizaciones de control de acceso adecuadas para cada acceso a todas las URL, scripts o archivos restringidos.
 
 - Considere utilizar marcos basados ​​en MVC como Struts.
 
 ![](Images/img21.png)
-
 
 Podemos encontrar también patrones de ataques relacionados 
 
