@@ -152,7 +152,7 @@ Como nos pasaba en la página cwe.mitre.org, aquí también podemos seleccionar 
 
 > Por la información suministrada, vemos que el ataque se denomina desbordamiento de enteros y consiste en obligar a una variable, dicho valor suele ser una posición de memoria, y utilizando valores fuera del rango de los valores enteros, se le asigna un valor no admitido para forzar un comportamiento inesperado.
 > 
-> ![](Images/img19.png)
+> ![](Images/img9.png)
 > 
 > Podemos ver cómo se realiza el flujo de ejecución, los requisitos previos, etc. así como las habilidades requeridas para la realización de este patrón de ataque.
 >
@@ -249,12 +249,12 @@ Podemos encontrar también patrones de ataques relacionados
 ![](Images/img20.png)
 
 
-
 ### Patrones de ataque relacionados
 
 Observamos si en la información de CWE se menciona un patrón de ataque CAPEC, en ese caso, podemos buscarlo en __CAPEC.mitre.org__.
 
 - Captura 7: Información de CAPEC sobre el patrón de ataque relacionado(de la descripción del patrón de ataque y su mitigación).
+
 
 
 ### Registro CVE y soluciones
