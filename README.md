@@ -122,9 +122,9 @@ En esta ocasión podemos ver como son dos las debilidades explotadas por esta vu
 >
 > También, por último, podemos ver las relaciones entre ésta y otras debilidades, ya que como podemos ver en la imagen
 >
-> ![](Images/img7.png)
->
 > Esta debilidad ha surgido a partir de la CWE-119 y es padre de la CWE-121 y CWE-122 que es la otra debilidad presente en la vulnerabilidad que estamos estudiando.
+>
+>  ![](Images/img7.png)
 
 
 - CWE-122
@@ -146,7 +146,7 @@ Podemos acceder a información sobre los patrones de ataque en la lista mantenid
 
 En el caso que nos atañe, hemos llegado a que la vulnerabilidad que estudiamos se puede explotar mediante el [patrón de ataque CAPEC-92. Aquí tenemos enlace a él.](https://capec.mitre.org/data/definitions/92.html)
 
-![](Images/img9.png)
+![](Images/img8.png)
 
 Como nos pasaba en la página cwe.mitre.org, aquí también podemos seleccionar la información a mostrar, dependiendo de nuestras necesidades. En caso de que queramos ver toda la información, selecionamos la vista Complete.
 
