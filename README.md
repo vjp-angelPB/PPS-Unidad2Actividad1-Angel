@@ -215,6 +215,9 @@ Haz una captura de la evaluación CVSS (severidad, vector de ataque, impacto, et
 
 - Captura 4: Métricas CVSS de la vulnerabilidad en NVD.
 
+![](Images/img16.png)
+
+Como observamos en la imagen anterior tiene una valoración de 9.8 Crítica, esto es debido a que el Vector de ataque es la red, la complejidad del ataque es baja, no requiere privilegios ni interacción de usuario, el alcance es sin cambios, es decir, no podemos llegar más allá del AutoCad al que entremos, y la confidencialidad, integridad y disponibilidad es alta.
 
 
 En la misma página, busca las debilidades CWE asociadas a la vulnerabilidad y toma una captura.
