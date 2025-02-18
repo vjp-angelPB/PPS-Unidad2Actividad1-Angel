@@ -188,6 +188,61 @@ En algunas ocasiones nos podemos encontrar que en él figura información que no
 
 A continuación, se detalla el trazado de la siguiente __[vulnerabilidad](https://www.incibe.es/empresas/avisos/vulnerabilidad-critica-de-omision-de-autenticacion-en-goanywhere-mft-de-fortra)__
 
+### Obtener información inicial sobre la vulnerabilidad
+Accedemos al enlace anterior y observamos la descripción general de la vulnerabilidad, (incluyendo CVE, impacto y recomendación).
+
+- Captura de la descripción general de la vulnerabilidad en la página de INCIBE (incluyendo CVE, impacto y recomendación).
+
+
+Buscamos el identificador CVE asociado a la vulnerabilidad en el aviso de INCIBE.
+
+
+### Consulta en la base de datos CVE y NVD
+A continuación, nos dirigimos a CVE.org e introducimos el CVE en la barra de búsqueda, hacemos captura de la información de la vulnerabilidad.
+
+- Captura 2: Página de CVE con la información de la vulnerabilidad.
+
+Después, buscamos el mismo CVE en NVD y revisamos la información que obtenemos, de nuevo, realizamos una captura de la página NVD con el CVSS junto a los detalles de la vulnerabilidad
+
+- Captura 3: Página de NVD mostrando la puntuación CVSS y los detalles del riesgo.
+
+
+### Análisis del riesgo y explotación
+
+En la página de NVD, revisa la sección de métricas CVSS.
+Haz una captura de la evaluación CVSS (severidad, vector de ataque, impacto, etc.).
+
+- Captura 4: Métricas CVSS de la vulnerabilidad en NVD.
+
+En la misma página, busca las debilidades CWE asociadas a la vulnerabilidad y toma una captura.
+
+- Captura 5: Información sobre las debilidades CWE asociadas en NVD.
+
+Para cada CWE listada, busca más información en CWE.mitre.org y toma capturas de su descripción y posibles mitigaciones.
+
+- Captura 6: Información de CWE en cwe.mitre.org.
+
+
+
+### Patrones de ataque relacionados
+
+Observamos si en la información de CWE se menciona un patrón de ataque CAPEC, en ese caso, podemos buscarlo en __CAPEC.mitre.org__.
+
+- Captura 7: Información de CAPEC sobre el patrón de ataque relacionado(de la descripción del patrón de ataque y su mitigación).
+
+
+### Registro CVE y soluciones
+Vuelve a la página de CVE.org y busca la opción "View JSON" para descargar el registro CVE.
+Toma una captura de la estructura JSON de la vulnerabilidad.
+
+- Captura 8: Información JSON de la vulnerabilidad en CVE.org.
+
+Si en NVD o INCIBE se mencionan parches o soluciones, accede a la página del fabricante y toma una captura de las versiones corregidas o del enlace de descarga.
+
+- Captura 9: Página del fabricante con los parches disponibles.
+
+
+
 
 
 
