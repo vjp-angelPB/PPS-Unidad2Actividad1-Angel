@@ -184,9 +184,9 @@ En algunas ocasiones nos podemos encontrar que en él figura información que no
 ---
 
 
-## Trazado de __[vulnerabilidad](https://www.incibe.es/empresas/avisos/vulnerabilidad-critica-de-omision-de-autenticacion-en-goanywhere-mft-de-fortra)__
+## Trazado de vulnerabilidad
 
-
+A continuación, se detalla el trazado de la siguiente __[vulnerabilidad](https://www.incibe.es/empresas/avisos/vulnerabilidad-critica-de-omision-de-autenticacion-en-goanywhere-mft-de-fortra)__
 
 
 
