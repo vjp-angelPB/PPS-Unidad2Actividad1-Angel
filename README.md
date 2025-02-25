@@ -1,7 +1,7 @@
 # PPS-Unidad2Actividad1-Angel
 
 # Trazado de una vulnerabilidad.
-Actividad 1 de la Unidad 2 de Puesta en Producción Segura. Tabajaremos con los Entornos de Desarrollo
+Actividad 1 de la Unidad 2 de Puesta en Producción Segura. Trabajaremos con los Entornos de Desarrollo
 
 Tenemos varios objetivos:
 
@@ -230,7 +230,7 @@ Más abajo en la misma página, aparecen las debilidades CWE asocialas a la vuln
 
 ![](Images/img17.png)
 
-Al pincha sobre el CWE mencionado, muestra información como la descripción del CWE, las consecuencias comunes, las posibles mitigaciones y demás...
+Al pinchar sobre el CWE mencionado, muestra información como la descripción del CWE, las consecuencias comunes, las posibles mitigaciones y demás...
 
 ![](Images/img18.png)
 
